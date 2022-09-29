@@ -1,0 +1,11 @@
+{
+  "__config__": {
+      "root": "{my_root_template_variable}",
+      "encoding": "utf-8"
+  },
+  "project_name" : "My-First-Project",
+  "__example" : "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "__Example" : "{{ cookiecutter.project_name.capitalize().replace(' ', '_').replace('-', '_') }}"
+}
+
+
