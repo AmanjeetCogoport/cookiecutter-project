@@ -1,31 +1,19 @@
 ## Installation Steps
 
 
-### 1. Creating New Repository
-You Need to go on the below link or click on `Use this template` Button in order to create a new repository.
+### 1. Clone Repo
 ```
-  https://github.com/Cogoport/micronaut-kotlin-starter-project/generate
+  git clone git@github.com:Cogoport/{{ cookiecutter.project_name.replace(' ', '-') }}.git
 ```
-* Give a relevant name to your repository.
-* Give proper description(optional).
+### 2. Install Docker and Docker Compose
+[Docker and Docker compose Install](https://docs.docker.com/desktop/mac/install/)
 
-**For more info checkout the below link**
-```
-https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
-```
-### 2. Run following command for initial necessary setup.
-After Cloning run following Command in your terminal.
-```shell
-sh initiate.sh example
-```
-It will ask you to provide Repository Name, provide it the repository name and Enter.
+### 3. Create ENV files
 
-
-you must give the same repository name that you have given at the time of Repository creation.
-This is very important. As we have used string 'example' at many places where your repository name should be according to our code convention.
-This script will do the job still it is strictly advisable to recheck and pay attention once more to check whether or not 'example' string is present in the codebase.
-
-### 3. Run Docker compose
+```
+  cp ./api/.env.example ./api/.env
+```
+### 4. Run Docker compose
 ```
   docker-compose -f ./api/docker-compose.dev.yml up
 ```
@@ -33,6 +21,8 @@ This script will do the job still it is strictly advisable to recheck and pay at
 ## Working with IntellJ IDE
 
 We have to install jdk explicitly to use Intellj build and run functionality.
+
+[Link to Download IntellJ IDE](https://www.jetbrains.com/idea/download)
 
 ### Setup SDKMan
 ```shell
@@ -64,5 +54,5 @@ sdk install micronaut
 
 5. Then Run the application
 ### Voila!!
-The application must have been started on port http://localhost:8080 and kafka UI on http://localhost:9000 .
+The application must have been started on port http://localhost:8080 and kafka UI on http://localhost:9000.
 

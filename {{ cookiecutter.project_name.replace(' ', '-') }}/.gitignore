@@ -12,3 +12,6 @@ out/
 .settings
 .classpath
 .factorypath
+
+.env
+/api/src/main/kotlin/com/cogoport/{{ cookiecutter.__example }}/api/uploadfiles/
