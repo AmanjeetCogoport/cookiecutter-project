@@ -15,7 +15,7 @@ services:
   db: 
     image: postgres:14.2-alpine3.15
     ports:
-      - "5432:5432"
+      - "5435:5432"
     restart: unless-stopped
     env_file:
       - '.env.test'
