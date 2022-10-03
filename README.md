@@ -1,26 +1,40 @@
-## Micronaut 3.4.3 Documentation
+## Installation Steps
 
-- [User Guide](https://docs.micronaut.io/3.4.3/guide/index.html)
-- [API Reference](https://docs.micronaut.io/3.4.3/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/3.4.3/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+### 1. Install python3 
+First you need to install python3 in your pc if it is not installed. You can confirm 
+it just by running a simple cmd.
+```
+  python3 --version
+```
 
-- [Shadow Gradle Plugin](https://plugins.gradle.org/plugin/com.github.johnrengelman.shadow)
-## Feature jdbc-hikari documentation
+### 2. install cookiecutter
+Just follow the given link in order to install cookiecutter in your pc
+[install cookiecutter](https://cookiecutter.readthedocs.io/en/stable/installation.html).
 
-- [Micronaut Hikari JDBC Connection Pool documentation](https://micronaut-projects.github.io/micronaut-sql/latest/guide/index.html#jdbc)
+You can verify or confirm it just by running this cmd.
+```
+cookiecutter --version
+```
 
+### 3. Creating Custom Micronaut Micro Service.
+You just follow the below steps in order to create new micrnaut microservice project from scratch.
 
-## Feature http-client documentation
+```
+cookiecutter git@github.com:Cogoport/micronaut-kotlin-starter-project.git
+```
 
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
+after running above cmd it will prompt as below. you just give your repo name and press enter.
+```
+project_name [My-First-Project]: repo_name
+```
 
+#### congratulations Your project is successfully created.
 
-## Feature r2dbc documentation
+Now, Run below cmd
+```
+cd repo_name
 
-- [Micronaut R2DBC documentation](https://micronaut-projects.github.io/micronaut-r2dbc/latest/guide/)
-
-- [https://r2dbc.io](https://r2dbc.io)
-
-
+git init
+```
+It will create a git micronaut project. now you can create a new repo on GitHub and you can push
+this local repo to remote GitHub repo.
